@@ -2,7 +2,7 @@
   "name": "palabra_distingida",
   "version": "1.0.0",
   "description": "",
-  "main": "distingida.js",
+  "main": "distinguida.js",
   "scripts": {
     "test": "jasmine-ts --config=jasmine.json"
   },

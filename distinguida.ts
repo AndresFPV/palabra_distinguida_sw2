@@ -3,9 +3,11 @@ export class Distinguida
     //por el principio DRY, modularización
     esDistinguida(palabra : string, inicio : number, fin : number, flag : number) : boolean
     {
+        //if (palabra.lenght == 2) return false
+
         let palabraVolteada : string = ""
         let palabraCorrecta = ""
-        for (let i=inicio; i >= fin; i--)
+        for (let i = inicio; i >= fin; i--)
         {
             if (flag == 2)
             {
@@ -13,7 +15,7 @@ export class Distinguida
                 palabraCorrecta += palabra[palabra.length - i - 2]
             }else if (flag == 1){
                 //i-palidroma
-                palabraCorrecta += palabra[palabra.length - i - 2]
+                palabraCorrecta += palabra[palabra.length - i]
             }else
             {
                 //palindroma
@@ -22,8 +24,7 @@ export class Distinguida
 
             palabraVolteada += palabra[i]
         }
-        console.log()
-        console.log(palabraVolteada)
+        
         return palabraVolteada == palabra
     }
     
@@ -57,7 +58,7 @@ export class Distinguida
 let main = () =>
     {
         let distinguida = new Distinguida()
-        let res = distinguida.distinguida("")
+        let res = distinguida.distinguida("PALABRA")
         console.log(res)
     }
 
