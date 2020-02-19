@@ -1,0 +1,19 @@
+{
+  "name": "palabra_distingida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "distingida.js",
+  "scripts": {
+    "test": "jasmine-ts --config=jasmine.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.5",
+    "jasmine": "^3.5.0",
+    "jasmine-ts": "^0.3.0",
+    "node-ts": "^5.0.3",
+    "typescript": "^3.7.5"
+  }
+}
